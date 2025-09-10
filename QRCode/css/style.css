@@ -1,0 +1,115 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/************************ card ******************************/
+.card {
+    width: 18rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--White);
+    text-align: center;
+}
+
+.card .QR-code {
+    width: 16em;
+    height: 16em;
+    border-radius: 10px;
+}
+
+.QR-code img {
+    width: 100%;
+    height: 100%;
+    color: var(--White);
+    border-radius: inherit;
+}
+
+.card h3 {
+    width: 100%;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card p {
+    font-size: 15px;
+    color: var(--Grayish-blue);
+    margin: 0;
+}
+
+/*************************** add theme ********************************/
+#theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    gap: 10px;
+    font-size: 15px;
+}
+
+/************************ change theme by JS **********************/
+#theme .moon {
+    background-color: var(--Dark-blue);
+    color: var(--White);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#theme .sun {
+    background-color: var(--White);
+    color: #FF5722;
+    border-radius: 50%;
+    padding: 10px;
+    
+}
+path {
+    animation: rotate 1s normal none;
+    animation-iteration-count: 1;
+}
+/* add sample animation to sun icon */
+@keyframes rotate {
+    0% {
+        transform: translateY(-500px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.dark {
+    background-color: #09101d !important;
+    color: var(--White) !important;
+}
+
+.bg {
+    background-color: #263238;
+}
