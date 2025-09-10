@@ -6,9 +6,9 @@ Rock Paper Scissors Game Player VS Computer
 
 
 ### Screenshots:
-<div style="display:flex; gap:20px">
+<div style="gap:10px;">
     <img src="./images/Screen Shot 2025-09-10 at 08.12.03.png" alt="Mobile Design" style="width:30%; height:auto;" />
-    <img src="./images/Screen Shot 2025-09-10 at 08.12.28.png" alt="Desktop Design" style="width:30%; height:auto;" />
+    <img src="./images/Screen Shot 2025-09-10 at 08.12.28.png" alt="Desktop Design" style="width:50%; height:auto;" />
 </div>
 
 
