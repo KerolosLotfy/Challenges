@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*::selection {
+    background-color: var(--Stone-900);
+    color: var(--White);
+}
+
+/* Colors */
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+        background-image: radial-gradient(var(--Stone-100));
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.main-container {
+    width: 100%;
+}
+
+.main-container .container {
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.container .image {
+    width: 100%;
+    border-radius: inherit;
+}
+
+.container .image img {
+    width: 100%;
+    border-radius: inherit;
+}
+
+.container .content {
+    padding: 20px;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.content .main-title {
+    font-size: 1.5rem;
+}
+
+.content .desc {
+    font-size: 10px;
+    color: var(--Stone-900);
+    margin-bottom: 10px;
+}
+
+.content .title {
+    font-size: 16px;
+    color: var(--Brown-800);
+    margin-bottom: 10px;
+}
+
+
+/* Global */
+ul,
+ol {
+    padding-left: 10px;
+    font-size: 12px;
+    color: var(--Brown-800);
+
+}
+
+ul li,
+ol li {
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+li::marker {
+    color: inherit;
+}
+
+li p {
+    color: var(--Stone-600);
+    font-family: "Outfit", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+li span {
+    font-weight: bold;
+    margin-right: 5px;
+    color: var(--Stone-900);
+}
+
+/* Prepare Time */
+.content .prepareTime {
+    background-color: var(--Rose-50);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.prepareTime .title {
+    color: var(--Rose-800);
+    font-size: 14px;
+}
+
+.content>.box {
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+.prepareTime ul {
+    color: var(--Rose-800);
+}
+
+
+
+
+
+/* Nutrition */
+.Nutrition .table {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.table .row {
+    display: flex;
+    background-color: transparent;
+    transition: all .2s ease;
+    &:hover {
+        background-color: var(--Stone-100);
+    }
+}
+
+.row p {
+    border-bottom: 1px solid var(--Stone-150);
+    width: 50%;
+    font-size: 12px;
+    font-family: "Outfit", sans-serif;
+    padding: 10px;
+    color: var(--Stone-600);
+}
+
+.row p.value {
+    color: var(--Brown-800);
+    font-weight: bolder;
+}
+
+.row:last-child p {
+    border-bottom: none;
+}
+
+/* Tablet & Desktop  */
+@media (min-width:577px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10%;
+    }
+
+    .main-container {
+        width: 450PX;
+    }
+
+    .main-container .container {
+        border-radius: 10px;
+        padding: 25px;
+    }
+
+    .container .content {
+        padding: 0px;
+    }
+}
+
+
+.random {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.random button {
+    padding: 10px;
+    background-color: var(--White);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: var(--Brown-800);
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--Brown-800);
+        opacity: 0;
+        border-radius: inherit;
+        transition: all .2s ease;
+    }
+
+    &:hover::after {
+        opacity: .2;
+    }
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.attribution a {
+    color: var(--Brown-800);
+    font-family: "Outfit", sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    font-style: italic;
+}
