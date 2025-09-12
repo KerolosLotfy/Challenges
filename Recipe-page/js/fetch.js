@@ -1,4 +1,4 @@
-const apiKey = "1f95c61e215f4d79a7c6561625ff884a"
+const apiKey = "5465f1e007bf4b548c05e3747add3504"
 
 export const fetchData = {
     random: async () => {
