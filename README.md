@@ -12,3 +12,4 @@ This Repository contains on Projects From Frontend Montor and Other Websites
 | Recipe Page | ✅ Complete|  HTML, CSS | Responsive Recipe Page component | [Live Demo](https://keroloslotfy.github.io/Challenges/Recipe-page)|
 | Social Links Profile | ✅ Complete |  HTML, CSS | Responsive Social Links Profile | [Live Demo](https://keroloslotfy.github.io/Challenges/Social-links-profile)|
 | FAQ Accordion | ✅ Complete |  HTML, CSS | FAQ Accordion Challenge | [Live Demo](https://keroloslotfy.github.io/Challenges/FAQ-accordion)|
+| Profile Card Component | ✅ Complete |  HTML, CSS | Profile Card Challenge | [Live Demo](https://keroloslotfy.github.io/Challenges/Profile-card)|
