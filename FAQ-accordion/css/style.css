@@ -5,6 +5,7 @@
     list-style: none;
     text-decoration: none;
     font-family: var(--fontFamily);
+    color: var(--Purple-950);
 }
 
 :root {
@@ -77,7 +78,7 @@ main .container {
 }
 
 .header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .questions .q {
@@ -101,8 +102,6 @@ main .container {
     & span {
         display: block;
         font-size: 16px;
-        width: 90%;
-
         @media screen and (max-width:576px) {
             width: 70%;
         }
