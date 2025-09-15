@@ -9,7 +9,8 @@ This Repository contains on Projects From Frontend Montor and Other Websites
 | Rock-Paper-Scissors-Game | ✅ Complete | HTML, CSS, JS | Interactive game with bonus features | [Live Demo](https://keroloslotfy.github.io/Challenges/Rock-Paper-Scissors-Game) |
 | QRCode | ✅ Complete |  HTML, CSS, JS | responsive QR Code component | [Live Demo](https://keroloslotfy.github.io/Challenges/QRCode)|
 | Interactive-rating-component | ✅ Complete |  HTML, CSS, JS | Interactive Rating Component | [Live Demo](https://keroloslotfy.github.io/Challenges/Interactive-rating-component)|
-| Recipe Page | ✅ Complete|  HTML, CSS | Responsive Recipe Page component | [Live Demo](https://keroloslotfy.github.io/Challenges/Recipe-page)|
+| Recipe Page | ✅ Complete|  HTML, CSS , Js, API | Responsive Recipe Page component | [Live Demo](https://keroloslotfy.github.io/Challenges/Recipe-page)|
 | Social Links Profile | ✅ Complete |  HTML, CSS | Responsive Social Links Profile | [Live Demo](https://keroloslotfy.github.io/Challenges/Social-links-profile)|
 | FAQ Accordion | ✅ Complete |  HTML, CSS | FAQ Accordion Challenge | [Live Demo](https://keroloslotfy.github.io/Challenges/FAQ-accordion)|
 | Profile Card Component | ✅ Complete |  HTML, CSS | Profile Card Challenge | [Live Demo](https://keroloslotfy.github.io/Challenges/Profile-card)|
+| Advice Generator App | ✅ Complete |  HTML, CSS, Js, API | Random Advices App | [Live Demo](https://keroloslotfy.github.io/Challenges/advice-generator-app)|
