@@ -5,12 +5,6 @@ const adviceText = document.querySelector("#advice-text")
 const randomBtn = document.querySelector(".btn")
 
 
-window.addEventListener(("load"), async () => {
-    const obj = await fetchData.getAdvice(71)
-    adviceId.textContent = 117
-    adviceText.textContent = `"${obj.slip.advice}"`
-})
-
 
 randomBtn.addEventListener(("click"), async () => {
 
@@ -20,8 +14,6 @@ randomBtn.addEventListener(("click"), async () => {
 
     // Text Effect
     textEffect(adviceText, obj.slip.advice,)
-
-
 })
 
 
