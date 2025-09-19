@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@theme {
+
+  /* Light Theme */
+  /* --color-bgColor: var(--color-Grey-50);
+  --color-textColor: var(--color-Grey-950); */
+
+  /* Dark Theme */
+  /* (Dark Mode Elements) */
+  --color-Blue-900: hsl(209, 23%, 22%);
+  /* (Dark Mode Background) */
+  --color-Blue-950: hsl(207, 26%, 17%);
+
+  /* Light Theme */
+  /* (Light Mode Text) */
+  --color-Grey-950: hsl(200, 15%, 8%);
+  /* (Light Mode Input) */
+  --color-Grey-400: hsl(0, 0%, 50%);
+  /* (Light Mode Background) */
+  --color-Grey-50: hsl(0, 0%, 99%);
+  /* (Dark Mode Text & Light Mode Elements) */
+  --color-White: hsl(0, 100%, 100%);
+
+  /* Font */
+  --text-Homepage: 14px;
+  --text-Detail: 16px;
+  --font-Nunito: "Nunito Sans", sans-serif;
+
+}
+
+
+a {
+  text-decoration: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-Nunito);
+}
+
+
+
+/* @media (prefers-color-scheme: dark) {
+  @theme {
+    --color-bgColor: var(--color-Blue-950);
+    --color-textColor: var(--color-white);
+  }
+} */
