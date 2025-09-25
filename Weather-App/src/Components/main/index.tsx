@@ -1,4 +1,4 @@
-import { useEffect, useState, } from "react"
+// import { useEffect, useState, } from "react"
 import type { DataTypes } from "../fetch/types"
 import { fetchData } from "../fetch"
 import { SearchComponent } from "./search"
@@ -6,6 +6,7 @@ import { WeatherSection } from "../weather"
 import { Link, useSearchParams } from "react-router-dom"
 import errIcon from "../../assets/images/icon-error.svg"
 import retryIcon from "../../assets/images/icon-retry.svg"
+import { useEffect, useState } from "react"
 
 
 export const Main = () => {
@@ -32,7 +33,7 @@ export const Main = () => {
                     (error) => {
                         // If user denies or there's an error, fallback to Berlin
                         console.log("Error: ", error.message)
-                        // setParams(`?lat=52.5244&lng=13.4105`); // Berlin, Germany
+                        setParams(`?lat=52.5244&lng=13.4105`); // Berlin, Germany
                     }
                 );
             }

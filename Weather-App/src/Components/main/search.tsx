@@ -56,7 +56,6 @@ export const SearchComponent = () => {
 
         const data: DataTypes["geocoding"] | never[] | null = el ? await fetchData.byName(el.value) : null
 
-        console.log(data)
 
         if (data && data.length == 1) {
             params.set("lat", data[0].latitude.toString())
