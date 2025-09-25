@@ -1,0 +1,52 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-Neutral-900);
+  color: var(--color-white);
+  align-items: center;
+}
+
+#mainPanel {
+  background-image: url("./assets/images/bg-today-small.svg");
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width:576px) {
+    background-image: url("./assets/images/bg-today-large.svg");
+  }
+}
+
+
+
+:focus {
+  outline: 1px solid var(--color-Neutral-0);
+  border: none !important;
+  outline-offset: 1px;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 1px;
+  background-color: var(--color-Neutral-900);
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-Neutral-0);
+}
+
+
+#hourly {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-Neutral-700) transparent;
+  scroll-behavior: smooth;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-Neutral-700) var(--color-Neutral-900);
+  scroll-behavior: smooth;
+}
