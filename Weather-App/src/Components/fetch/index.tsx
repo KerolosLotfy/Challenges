@@ -2,7 +2,7 @@ import { fetchWeatherApi } from 'openmeteo';
 import type { DataTypes } from "./types";
 const apiUrl = "https://api.open-meteo.com/v1/forecast"; // ?latitude={location.latitude}&longitude=${location.longitude}
 const geoCodingUrl = "https://geocoding-api.open-meteo.com/v1/search" // ?name={location Name} return {id | name | country_code | latitude | longitude}
-const geonamesUrl = "http://api.geonames.org/findNearbyJSON?username=kode&"  // lat=47.3&lng=9"
+const geonamesUrl = "https://secure.geonames.org/findNearbyJSON?username=kode&"  // lat=47.3&lng=9"
 
 // Country Flag
 export const flagUrl = "https://hatscripts.github.io/circle-flags/flags/" // + {countryCode}.svg
