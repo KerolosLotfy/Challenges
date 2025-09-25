@@ -103,7 +103,9 @@ export const SearchComponent = () => {
                                 {/* <Link to={`?lat=${obj.latitude}&lng=${obj.longitude}`} onClick={searching}>{obj.name}, {obj.country}</Link> */}
                                 <p className="cursor-pointer" onClick={(e) => {
                                     const inputEl: HTMLInputElement | null = document.querySelector("input#search")
-                                    inputEl && (inputEl.value = e.currentTarget.textContent)
+                                    if (inputEl) {
+                                        inputEl.value = e.currentTarget.textContent as string
+                                    }
                                     document.querySelector("#placesList")?.classList.add("hidden")
                                     // setPlaces([])
                                 }}>
