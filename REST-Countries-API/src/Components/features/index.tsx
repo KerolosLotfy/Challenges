@@ -108,7 +108,7 @@ const Filter = () => {
             <FaArrowTurnDown />
 
             {/* List */}
-            <ul className=" hidden z-10 absolute bg-inherit text-inherit rounded-md p-4 w-full left-0 top-full mt-1 shadow-lg z-2" id="regionList">
+            <ul className=" hidden z-10 absolute bg-inherit text-inherit rounded-md p-4 w-full left-0 top-full mt-1 shadow-lg z-20" id="regionList">
                 <li className="border-l-4 flex items-center gap-2 p-1 mb-1.5  pl-3 active">
                     <FaDotCircle className="dot text-[.5rem] hidden" />
                     <Link to={`/`} className=" block w-full ">All</Link>
