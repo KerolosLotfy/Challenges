@@ -101,26 +101,14 @@ const Filter = () => {
 
 
     return (
-        // <div className=" cursor-pointer flex justify-between items-center gap-5 max-w-fit bg-white text-Grey-950 p-1  text-Homepage dark:bg-Blue-900 dark:text-white shadow-lg rounded-md">
-        //     <select className=" cursor-pointer border-none appearance-none w-full bg-inherit text-inherit p-4" aria-label="region-select" onChange={filtering}>
-        //         <button type="button" className="text">
-        //             <FaArrowTurnDown />
-        //         </button>
-
-        //         <option value="">   Filter by Region</option>
-        //         {regions.map((r, i) =>
-        //             <option value={r} key={i} className="" >{r}</option>
-        //         )}
-        //     </select>
-        // </div>
-
+   
         <div className=" max-w-[200px] flex-1 relative cursor-pointer flex justify-between items-center gap-5  bg-white text-Grey-950 p-3 text-Homepage dark:bg-Blue-900 dark:text-white shadow-lg rounded-md" onClick={displayMenu}>
             <span id="listValue">{listValue}</span>
 
             <FaArrowTurnDown />
 
             {/* List */}
-            <ul className=" hidden z-10 absolute bg-inherit text-inherit rounded-md p-4 w-full left-0 top-full mt-1 shadow-lg" id="regionList">
+            <ul className=" hidden z-10 absolute bg-inherit text-inherit rounded-md p-4 w-full left-0 top-full mt-1 shadow-lg z-2" id="regionList">
                 <li className="border-l-4 flex items-center gap-2 p-1 mb-1.5  pl-3 active">
                     <FaDotCircle className="dot text-[.5rem] hidden" />
                     <Link to={`/`} className=" block w-full ">All</Link>
