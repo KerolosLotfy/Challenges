@@ -22,38 +22,53 @@ export const Main = () => {
     }
 
 
+
+
+
     useEffect(() => {
         
-        if (!params.has('lat') && !params.has('ln')) {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(
-                    (position) => {
-                        setParams(`?lat=${position.coords.latitude}&lng=${position.coords.longitude}`);
-                    },
-                    (error) => {
-                        // If user denies or there's an error, fallback to Berlin
-                        console.log("Error: ", error.message)
-                        setParams(`?lat=52.5244&lng=13.4105`); // Berlin, Germany
-                    }
-                );
-            }
-        } else {
+
+        // if (navigator.geolocation) {
+        //     navigator.geolocation.getCurrentPosition(
+        //         (position) => {
+        //             setParams(`?lat=${position.coords.latitude}&lng=${position.coords.longitude}`);
+        //         },
+        //         (error) => {
+        //             // If user denies or there's an error, fallback to Berlin
+        //             console.log("Error: ", error.message)
+        //         }
+        //     );
+        // }
             (async () => {
                 setError(null)
+               
                 setWeatherData(undefined)
+
                 try {
-                    const location: DataTypes["location"] = {
-                        latitude: Number(params.get('lat')),
-                        longitude: Number(params.get("lng"))
+                    if (!params.has("lat") && !params.has("lng")) {
+                        // const data: DataTypes["weatherData"] = await fetchData.WeatherData({
+                        //     latitude: 52.5244,
+                        //     longitude: 13.4105
+                        // }, units)
+                        setParams("?lat=52.5244&lng=13.4105")
+
+                    } else if (params.get("err") == 'not-found') {
+                        setWeatherData(undefined)
+                    } else {
+                        const location: DataTypes["location"] = {
+                            latitude: Number(params.get('lat')),
+                            longitude: Number(params.get("lng"))
+                        }
+
+                        const data: DataTypes["weatherData"] = await fetchData.WeatherData(location, units)
+                        setWeatherData(data)
                     }
-                    const data: DataTypes["weatherData"] = await fetchData.WeatherData(location, units)
-                    setWeatherData(data)
+
                 } catch (err: unknown) {
                     const message = err instanceof Error ? err.message : "Unexpected error"
                     setError(message)
                 }
             })();
-        }
 
     }, [params])
 

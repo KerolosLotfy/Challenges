@@ -4,6 +4,7 @@ import loadingIcon from "../../assets/images/icon-loading.svg"
 import { flagUrl, fetchData } from "../fetch"
 import type { DataTypes } from "../fetch/types"
 import { useNavigate, useSearchParams } from "react-router-dom"
+import { FaX } from "react-icons/fa6"
 
 
 export const SearchComponent = () => {
@@ -56,24 +57,16 @@ export const SearchComponent = () => {
 
         const data: DataTypes["geocoding"] | never[] | null = el ? await fetchData.byName(el.value) : null
 
-
         if (data && data.length == 1) {
             params.set("lat", data[0].latitude.toString())
             params.set("lng", data[0].longitude.toString())
             nav(`?${params.toString()}`)
         } else {
-            params.delete("lat");
+            params.set("lat", 'not-found');
             params.delete("lng");
+            // params.set("err",'not-found');
             nav(`?${params.toString()}`)
         }
-
-        // el && params    
-        el && (el.value = "")
-
-        // Display Input Label
-        document.querySelector("input#search ~ label")?.classList.remove("hidden")
-        // Hide Places List
-        document.querySelector("#placesList")?.classList.add("hidden")
 
         setPlaces(null)
     }
@@ -94,7 +87,12 @@ export const SearchComponent = () => {
 
 
                 {/* places List */}
-                <div className="hidden absolute w-full min-h-full bg-inherit rounded-md left-0 top-[110%] z-10  p-4" id="placesList">
+                <div className="hidden absolute w-full min-h-full bg-inherit rounded-md left-0 top-[110%] z-1  p-4" id="placesList">
+                    <div className="relative p-2 right-0 w-full flex justify-end">
+                        <FaX className=" cursor-pointer" onClick={(e) => {
+                            e.currentTarget.parentElement?.parentElement?.classList.add("hidden")
+                        }} />
+                    </div>
                     {places ? (
                         places.length ? places.map((obj) => (
                             <div key={obj.id} className="flex items-center gap-4 p-2 hover:text-Blue-500">
@@ -107,6 +105,7 @@ export const SearchComponent = () => {
                                     }
                                     document.querySelector("#placesList")?.classList.add("hidden")
                                     // setPlaces([])
+                                    searching();
                                 }}>
                                     {obj.name}, {obj.country}
                                 </p>

@@ -63,7 +63,7 @@ export const CurrentForecast = ({ weatherData }: { weatherData: DataTypes["weath
 
             {/* Other Current Details */}
             <div className="flex flex-wrap w-full mt-4 gap-4 justify-between ">
-                <div className=" bg-Neutral-800 p-3 pt-2 rounded-lg basis-[8rem] ">
+                <div className=" bg-Neutral-800 p-3 pt-2 rounded-lg max-sm:basis-[11rem] flex-1 ">
                     <p className="text-[.8rem] text-Neutral-300 ">Feels Like</p>
                     <p className="mt-2 text-xl">
                         {
@@ -83,7 +83,7 @@ export const CurrentForecast = ({ weatherData }: { weatherData: DataTypes["weath
                     </p>
                 </div>
 
-                <div className=" bg-Neutral-800 p-3 pt-2 rounded-lg basis-[8rem] ">
+                <div className=" bg-Neutral-800 p-3 pt-2 rounded-lg max-sm:basis-[11rem] flex-1 ">
                     <p className="text-[.8rem] text-Neutral-300 ">Humidity</p>
                     <p className="mt-2 text-xl">
                         {
@@ -103,7 +103,7 @@ export const CurrentForecast = ({ weatherData }: { weatherData: DataTypes["weath
                     </p>
                 </div>
 
-                <div className=" bg-Neutral-800 p-3 pt-2 rounded-lg basis-[8rem] ">
+                <div className=" bg-Neutral-800 p-3 pt-2 rounded-lg max-sm:basis-[11rem] flex-1 ">
                     <p className="text-[.8rem] text-Neutral-300 ">Wind</p>
                     <p className="mt-2 text-xl">
                         {
@@ -123,7 +123,7 @@ export const CurrentForecast = ({ weatherData }: { weatherData: DataTypes["weath
                     </p>
                 </div>
 
-                <div className=" bg-Neutral-800 p-3 pt-2 rounded-lg basis-[8rem] ">
+                <div className=" bg-Neutral-800 p-3 pt-2 rounded-lg max-sm:basis-[11rem] flex-1 ">
                     <p className="text-[.8rem] text-Neutral-300 ">Precipitation</p>
                     <p className="mt-2 text-xl">
                         {
