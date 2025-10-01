@@ -1,0 +1,178 @@
+/* ______ Reset ______ */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    /* ______ Colors ______ */
+
+    --Gold-500: hsl(31, 77%, 52%);
+    --Cyan-800: hsl(184, 100%, 22%);
+    --Green-950: hsl(179, 100%, 13%);
+    /* (paragraphs) */
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (background, headings, buttons) */
+    --Gray-100: hsl(0, 0%, 95%);
+
+
+    /* ______ Fonts ______ */
+    --text-body: 15px;
+    --font-Lexend: "Lexend Deca", sans-serif;
+    --font-Big-Shoulders: "Big Shoulders", sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-size: var(--text-body);
+    font-family: var(--font-Lexend);
+    color: var(--Gray-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Gray-100);
+    padding-top: 50px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.col {
+    max-width: 350px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    /*_____Title_____ */
+    h1 {
+        font-family: var(--font-Big-Shoulders);
+        font-size: 2rem;
+        color: var(--Gray-100);
+        text-transform: uppercase;
+    }
+
+    /*_____Description_____ */
+    p {
+        max-width: 250px;
+        color: var(--Transparent-white);
+        line-height: 1.5rem;
+    }
+
+    /*_____Button_____ */
+    .btn {
+        background-color: var(--Gray-100);
+        max-width: 10rem;
+        text-align: center;
+        border-radius: 20px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        text-transform: capitalize;
+        transition: background-color .2s ease;
+        position: relative;
+        z-index: 1;
+
+
+        span {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            display: block;
+            padding: 10px;
+            border-radius: inherit;
+
+            &:hover {
+                color: var(--Gray-100);
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+        }
+
+        /*_____Desktop_____ */
+        @media screen and (min-width:769px) {
+            margin-top: 60px;
+        }
+
+        &>span::before {
+            position: absolute;
+            content: "";
+            width: 0%;
+            height: 100%;
+            border-radius: inherit;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            transition: width .3s ease;
+        }
+
+
+    }
+
+
+}
+
+
+
+.col.gold {
+    background-color: var(--Gold-500);
+    color: var(--Gold-500);
+
+    .btn span::before {
+        background-color: var(--Gold-500);
+    }
+}
+
+
+
+.col.cyan {
+    background-color: var(--Cyan-800);
+    color: var(--Cyan-800);
+
+    .btn span::before {
+        background-color: var(--Cyan-800);
+    }
+}
+
+.col.green {
+    background-color: var(--Green-950);
+    color: var(--Green-950);
+
+    .btn span::before {
+        background-color: var(--Green-950);
+    }
+
+}
+
+.col:first-child {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+
+    @media screen and (min-width:769px) {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: inherit;
+    }
+}
+
+.col:last-child {
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+
+    @media screen and (min-width:769px) {
+        border-top-right-radius: inherit;
+        border-bottom-left-radius: 0;
+    }
+}
