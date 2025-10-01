@@ -1,0 +1,61 @@
+# Frontend Mentor - Stats preview card component solution
+
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout depending on their device's screen size
+
+### Screenshot
+
+![Mobile](./design/127.0.0.1_5500_stats-preview-card-component_(iPhone%20SE).png)
+![Desktop](./design/127.0.0.1_5500_stats-preview-card-component_(Nest%20Hub%20Max).png)
+
+### Links
+
+- [Source](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62)
+- [Live Demo](https://keroloslotfy.github.io/Challenges/stats-preview-card-component)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+
+
+### Useful resources
+
+- [MDN](https://developer.mozilla.org/en-US/)
+
+
+## Author
+
+- Website - [KerolosLotfy](https://www.your-site.com)
+- Frontend Mentor - [@KerolosLotfy](https://www.frontendmentor.io/profile/KerolosLotfy)
+
+
+## Acknowledgments
+
+This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+
