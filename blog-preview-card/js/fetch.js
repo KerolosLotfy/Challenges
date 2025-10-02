@@ -5,7 +5,7 @@ const url = "https://newsapi.org/v2/everything?"
 
 export const GetBlogs = async (category) => {
     try {
-        const data = await fetch(`${url}q=${category}&apiKey=${apiKey}`, { mode: "cors" }).then(async (res) => await res.json())
+        const data = await fetch(`${url}q=${category}&apiKey=${apiKey}`, { mode: "no-cors" }).then(async (res) => await res.json())
         return data
     } catch (error) {
         console.log(error)
