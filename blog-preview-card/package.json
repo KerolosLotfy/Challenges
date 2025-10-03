@@ -4,7 +4,7 @@
   "description": "A blog preview card component with TypeScript",
   "main": "dist/scripts/script.js",
   "scripts": {
-    "build": "npm intall&tsc",
+    "build": "npm install&tsc",
     "build:watch": "tsc --watch",
     "dev": "tsc --watch",
     "start": "npx http-server . -p 8080 -o",
