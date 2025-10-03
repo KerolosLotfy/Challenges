@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import type { DevToApiResponse, DevToArticle } from "../fetch/types";
+import illustrationArticle from "../../assets/images/illustration-article.svg";
+import imageAvatar from "../../assets/images/image-avatar.webp";
 
 
 
@@ -18,7 +20,7 @@ export const Card = ({ articles }: { articles: DevToApiResponse | undefined }) =
         <>
             <main>
                 <div className="image">
-                    <img src={article ? article.social_image as string : '/src/assets/images/illustration-article.svg'} alt="illustration" />
+                    <img src={article ? article.social_image as string : illustrationArticle} alt="illustration" />
                 </div>
 
                 <div className="content">
@@ -50,7 +52,7 @@ export const Card = ({ articles }: { articles: DevToApiResponse | undefined }) =
                 </div>
 
                 <div className="author">
-                    <img src={article ? article.user.profile_image_90 : "/src/assets/images/image-avatar.webp"} alt="avatar" />
+                    <img src={article ? article.user.profile_image_90 : imageAvatar} alt="avatar" />
                     <a href={article ? article.user.website_url as string : ""} className="name">{article ? article.user.name : 'Greg Hooper'}</a>
                 </div>
             </main>
