@@ -1,80 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/images/favicon-32x32.png">
-
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Frontend Mentor | Blog preview card</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
-
-  <link rel="stylesheet" href="./src/styles.css">
-
 </head>
 
 <body>
-
-  <header>
-    <form>
-      <input type="text" name="tag" id="tag" placeholder="Please Enter Blog Category">
-      <button type="submit" id="btn">Get Random Blog</button>
-    </form>
-  
-    <div class="message">
-      <p class="loading ">
-      Loading
-      <strong>...</strong>
-    </p>
-    <p class="error">
-      Error
-    </p>
-    </div>
-    
-    </header>
-
-  <main>
-
-    <div class="image">
-      <img src="./src/assets/images/illustration-article.svg" alt="illustration">
-    </div>
-
-    <div class="content">
-      <div class="tags">
-        <p class="category">Learning</p>
-      </div>
-
-      <p class="publish-date">Published <span>21 Dec 2023</span></p>
-
-      <h1 class="title">
-        <a href="#" target="_blank">HTML & CSS foundations</a>
-      </h1>
-
-      <p class="desc">
-        These languages are the backbone of every website, defining structure, content, and presentation.
-      </p>
-    </div>
-
-    <div class="author">
-      <img src="./src/assets/images/image-avatar.webp" alt="avatar">
-      <a href="#" class="name">Greg Hooper</a>
-    </div>
-  </main>
-
-  <div class="attribution">
-    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend
-        Mentor</a>.</p>
-    <p>Coded by <a href="https://github.com/KerolosLotfy/" target="_blank" rel="noopener">Kerolos Lotfy</a>.</p>
-  </div>
-
-
-  <script src="./dist/scripts/script.js" type="module"></script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
 </body>
 
 </html>

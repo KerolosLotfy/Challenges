@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 -  [Source URL](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS)
--  [Live Demo](https://keroloslotfy.github.io/Challenges/blog-preview-card)
+-  [Live Demo](https://randomblogs.netlify.app/)
 
 ## My process
 

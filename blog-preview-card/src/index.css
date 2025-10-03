@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+
+
+
+@theme {
+
+  /* ______ Colors ______ */
+  --color-Yellow: hsl(47, 88%, 63%);
+  --color-White: hsl(0, 0%, 100%);
+  --color-Gray-500: hsl(0, 0%, 42%);
+  --color-Gray-950: hsl(0, 0%, 7%);
+
+
+  /* ______ Fonts ______ */
+  --text-body: 16px;
+  --font-Figtree: "Figtree", sans-serif;
+
+}
+
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+body {
+  width: 100vw;
+   height: 100vh;
+  font-size: var(--text-body);
+  font-family: var(--font-Figtree);
+  color: var(--Gray-100);
+  background-color: var(--color-Yellow);
+  overflow-x: hidden;
+}
