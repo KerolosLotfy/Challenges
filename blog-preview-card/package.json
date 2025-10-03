@@ -4,7 +4,7 @@
   "description": "A blog preview card component with TypeScript",
   "main": "dist/scripts/script.js",
   "scripts": {
-    "build": "npm install&tsc",
+    "build": "npm install && tsc",
     "build:watch": "tsc --watch",
     "dev": "tsc --watch",
     "start": "npx http-server . -p 8080 -o",
@@ -21,13 +21,9 @@
   "author": "Kerolos Lotfy",
   "license": "MIT",
   "devDependencies": {
-    "@types/express": "^5.0.3",
     "@types/node": "^20.0.0",
     "http-server": "^14.0.0",
     "rimraf": "^5.0.0",
     "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "express": "^5.1.0"
   }
 }
