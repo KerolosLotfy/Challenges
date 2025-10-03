@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile](./design/127.0.0.1_5500_blog-preview-card_index.html(iPhone%20SE).png)
-![Desktop](./design/127.0.0.1_5500_blog-preview-card_index.html(Nest%20Hub%20Max).png)
+![Mobile](./src/assets/design/127.0.0.1_5500_blog-preview-card_index.html(iPhone%20SE).png)
+![Desktop](./src/assets/design/127.0.0.1_5500_blog-preview-card_index.html(Nest%20Hub%20Max).png)
 
 ### Links
 

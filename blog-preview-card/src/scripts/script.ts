@@ -115,9 +115,10 @@ const displayData = (articles: DevToApiResponse): void => {
   }
 
   // Author
-  const authorEl = document.querySelector(".author .name");
+  const authorEl: HTMLLinkElement | null = document.querySelector(".author .name");
   if (authorEl) {
     authorEl.textContent = article.user.name || "Unknown Author";
+    authorEl.href = article.user.website_url || "#";
   }
 
   // Author image
