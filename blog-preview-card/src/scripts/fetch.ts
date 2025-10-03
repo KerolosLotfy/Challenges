@@ -1,4 +1,4 @@
-import type { DevToApiResponse } from "./types";
+import type { DevToApiResponse } from "./types.js";
 
 
 const url = "https://dev.to/api/articles";
