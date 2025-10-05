@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+  <main>
+
+    <form>
+
+      <div>
+        <label for="day">day</label>
+        <input type="text" name="day" id="day" placeholder="DD" maxlength="2">
+        <p class="err-message"></p>
+      </div>
+
+      <div>
+        <label for="month">month</label>
+        <input type="text" name="month" id="month" placeholder="MM" maxlength="2">
+        <p class="err-message"></p>
+      </div>
+
+      <div>
+        <label for="year">year</label>
+        <input type="text" name="year" id="year" placeholder="YYYYY" maxlength="4">
+        <p class="err-message"></p>
+      </div>
+
+      <button type="submit">
+        <img src="./assets/images/icon-arrow.svg" alt="icon-arrow">
+      </button>
+
+    </form>
+
+
+
+
+    <h1 class="result">
+      <p class="years">
+        <span>--</span>
+        years
+      </p>
+      <p class="months">
+        <span>--</span>
+        months
+      </p>
+      <p class="days">
+        <span>--</span>
+        days
+      </p>
+    </h1>
+
+
+    <div class="save">
+      <div class="save-btn">
+        <i class="fa-solid fa-bookmark"></i>
+        <span>Save</span>
+      </div>
+
+      <input type="text" placeholder="Please Enter A Name">
+      <span class="err">Please Insert A Name</span>
+    </div>
+
+  </main>
+
+  <section class="bookmarks">
+    <div class="title">
+      <i class="fa-solid fa-bookmark"></i>
+      <p>bookmarks</p>
+      <i class="fa-solid fa-caret-down"></i>
+    </div>
+
+    <ul class="list"></ul>
+  </section>
+
+  <p class="saved-msg">
+    <i class="fa-solid fa-circle-check"></i>
+    <span> Saved successfully</span>
+  </p>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
