@@ -315,12 +315,12 @@ bookmarksEl.querySelector('.title').addEventListener("click", () => {
     bookmarksEl.querySelector(".list").classList.toggle("active")
 })
 
-// Get Birth Date from bookmarks at a specific name
-bookmarksEl.querySelectorAll(".list li").forEach((el) => {
-    el.addEventListener('click', () => {
+// Get Birth Date from bookmarks at a specific name (using event delegation)
+bookmarksEl.querySelector(".list").addEventListener('click', (e) => {
+    if (e.target.tagName === 'LI') {
         // Get BirthDate at the name
         let bookmarks = JSON.parse(localStorage.getItem("bookmarks"))
-        let objData = bookmarks.filter((obj) => obj.name == el.textContent)[0]
+        let objData = bookmarks.filter((obj) => obj.name == e.target.textContent)[0]
         inputs.forEach((input) => {
             input.id == "day" && (input.value = objData.birthDate.day)
             input.id == "month" && (input.value = objData.birthDate.month)
@@ -328,5 +328,5 @@ bookmarksEl.querySelectorAll(".list li").forEach((el) => {
         })
 
         displayAge(calcAge(objData.birthDate))
-    })
+    }
 })
